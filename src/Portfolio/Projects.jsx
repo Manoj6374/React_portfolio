@@ -3,10 +3,11 @@ import React from "react";
 import { MdSportsCricket } from "react-icons/md";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
+import { CgGym } from "react-icons/cg";
 
 import Ecommerce from '../assets/WhatsApp Image 2024-05-27 at 7.36.01 PM.jpeg';
 import rcb from '../assets/IMG_20240531_184954.jpg'
-
+import gym from '../assets/gym.jpg'
 
 
 export const Projects = () => {
@@ -28,7 +29,7 @@ export const Projects = () => {
             View <i className="fa-solid fa-eye-slash"></i>
           </a>
         </div> */}
-        <div className="card">
+        <div className="card" data-aos="fade-up" data-aos-id="super-duper">
           <span>
           <FaShoppingCart />          
           </span>
@@ -49,7 +50,7 @@ export const Projects = () => {
             View <FaEye />
           </a>
         </div>
-        <div className="card">
+        <div className="card" data-aos="flip-down" data-aos-id="super-duper" >
           <span>
           <MdSportsCricket /> 
           </span>
@@ -61,6 +62,21 @@ export const Projects = () => {
       <li>JavaScript</li>
       </ul>
           <a href="https://rcbfanpage.netlify.app/" aria-label="RCB">
+            View <FaEye />
+          </a>
+        </div>
+        <div className="card" data-aos="flip-up" data-aos-id="super-duper">
+          <span>
+          <CgGym/>
+          </span>
+          <h4>Titan Gym</h4>
+          <img src={gym} alt="GYM" />
+          <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      </ul>
+          <a href="https://titangym.netlify.app/" aria-label="RCB">
             View <FaEye />
           </a>
         </div>
