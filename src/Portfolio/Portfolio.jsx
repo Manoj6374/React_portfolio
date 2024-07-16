@@ -1,6 +1,9 @@
 import React, {  useState } from 'react';
 import './Portfolio.css'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
 
 import { Projects } from "./Projects";
 import { Nav } from "./Nav";
@@ -95,7 +98,7 @@ export const Portfolio = () => {
         <Nav/>
       </header>
 
-      <div className="skills" id="skills">
+      <div className="skills" id="skills" >
         
         <Skills/>
       </div>
@@ -118,7 +121,8 @@ export const Portfolio = () => {
 <p ><a className="instagram" href="https://www.instagram.com/m_r_m_a_n_o_j_24?igsh=MW12aXAzMjgxaTVjNA=="> <FaInstagram /> </a></p>
 <p ><a className="facebook"  href="(+91 6374003745)"><i className="fa-brands fa-facebook"></i><TiSocialFacebook /></a></p>
 <p ><a className="twitter"   href="#"><i className="fa-brands fa-twitter"></i> <TiSocialTwitter /> </a></p>
-<p ><a className="whatsapp"  href="#"><i className="fa-brands fa-whatsapp"></i> <FaWhatsapp /></a></p>
+<p ><a className="whatsapp"  href="#
+"><i className="fa-brands fa-whatsapp"></i> <FaWhatsapp /></a></p>
 
 </div>
         </div>
@@ -127,3 +131,5 @@ export const Portfolio = () => {
   );
 
 };
+AOS.init();
+
